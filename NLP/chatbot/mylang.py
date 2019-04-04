@@ -94,7 +94,7 @@ class Lang():
 
             a2id_input = [self.qa_dict['<GO>']] + a2id
             a2id_target = a2id + [self.qa_dict['<EOS>']]
-            a_length = len(self.raw_a[i])
+            a_length = len(self.raw_a[i]) + 1
 
             q_length_feature = tf.train.Feature(int64_list=tf.train.Int64List(value=[q_length]))
             a_length_feature = tf.train.Feature(int64_list=tf.train.Int64List(value=[a_length]))
