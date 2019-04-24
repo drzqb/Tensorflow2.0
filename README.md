@@ -3,4 +3,4 @@
 CV: computer vision  
 NLP: natural language process  
 RS: recommendation system  
-GAN: generative adversarial network  
+GAN: generative adversarial networks  
