@@ -114,7 +114,7 @@ class Discriminator(tf.keras.Model):
     def __init__(self):
         super(Discriminator, self).__init__()
         self.dense = tf.keras.layers.Dense(128, activation='relu')
-        self.dense_output = tf.keras.layers.Dense(1, activation='sigmoid')
+        self.dense_output = tf.keras.layers.Dense(1)
 
     def __call__(self, x, c):
         xc = self.dense(tf.concat([x, c], axis=-1))
